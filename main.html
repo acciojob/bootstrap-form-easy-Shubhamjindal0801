@@ -1,16 +1,67 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="./bootstrap-lib/css/bootstrap.min.css">
+    <script src="./bootstrap-lib/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <div class="container">
+        <h1 class="text-center">Internship Form</h1>
+        <form class="was-validated row"> 
+            <div class="row">
+                <div class="col-4">
+                    <label for="first-name-input">First Name</label>
+                    <input type="text" class="form-control" id="first-name-input" required>
+                    <div class="invalid-feedback">First name required!</div>
+                </div>
+                <div class="col-4">
+                    <label for="last-name-input">Last Name</label>
+                    <input type="text" class="form-control" id="last-name-input" required>
+                    <div class="invalid-feedback">Last name required!</div>
+                </div>
+                <div class="col-4">
+                    <label for="email-input">Email</label>
+                    <input type="email" class="form-control" id="email-input" required>
+                    <div class="invalid-feedback">Email required!</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label for="college-input">College</label>
+                    <input type="text" class="form-control" id="college-input" required>
+                    <div class="invalid-feedback">Please provide a valid college.</div>
+                </div>
+                <div class="col-3">
+                    <label for="graduation-year-input">Graduation Year</label>
+                    <select class="form-control" id="graduation-year-input" required>
+                        <option value="">Choose...</option>
+                        <option value="2024">2020</option>
+                        <option value="2024">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                    </select>
+                    <div class="invalid-feedback">Please provide a Graduation Year.</div>
+                </div>
+                <div class="col-3">
+                    <label for="roll-no-input">Roll No.</label>
+                    <input type="number" class="form-control" id="roll-no-input" required>
+                    <div class="invalid-feedback">Please provide a valid Roll no.</div>
+                </div>
+                <div class="col-12">
+                    <input type="checkbox" id="conditions-checkbox" required>
+                    <label for="conditions-checkbox">Agree to terms and conditions</label>
+                    <div class="invalid-feedback">You must agree before submiting</div>
+                </div>
+            </div>
+        </form>
+        <button type="submit" class="btn btn-primary">Submit Form</button>
+    </div>
 </body>
-
 </html>
